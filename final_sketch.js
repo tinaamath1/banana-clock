@@ -262,6 +262,6 @@ function drawSeconds(mySecond) {
     // Calculate dot position based on angle, distance, and cluster center position
     const dotX = clusterX + cos(angle) * distance;
     const dotY = clusterY + sin(angle) * distance;
-    circle(dotX, dotY, 2);
+    circle(dotX, dotY, 4);
   }
 }
