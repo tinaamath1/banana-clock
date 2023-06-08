@@ -15,11 +15,11 @@ function setup() {
   noStroke();
   
   const x1 = 582
-  const y1 = 558 //527 //539 
+  const y1 = 578 //527 //539 
   const x2 = 645 //652 //618
   const y2 = 533
   const x3 = 580
-  const y3 = 580 //583 //574
+  const y3 = 600 //583 //574
   const x4 = 511 //495 //537
   const y4 = 536
   clusterX = random(width);
