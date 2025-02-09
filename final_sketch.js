@@ -30,12 +30,12 @@ function setup() {
 
   for(let i =0; i<= 60;i++){
     minX.push(random(x4,x2));
-    minY.push(random(y1,y3));
+    minY.push(random(y1-60,y3-60));
   }
 
   for(let j=0; j <= 24; j++){
     hourX.push(random(x4,x2));
-    hourY.push(random(y1,y3))
+    hourY.push(random(y1-60 ,y3 - 60))
   }
 
 
@@ -226,15 +226,37 @@ function drawMinutes(myMinute){
     circle (minX[i], minY[i], 5);
     // constrain(dot, 570, 633);
     // circle((width/4+200)+5*i, (height-250), 3); //minute
+
+  // let bananaCenterX = width / 4 + 230;
+  // let bananaCenterY = height - 250;
+  // let radius = 20; // Adjust as needed
+
+  // for (let i = 0; i < myMinute; i++) {
+  //   let theta = map(i, 0, 60, PI / 4, (3 * PI) / 4); // Adjust range for curvature
+  //   let x = bananaCenterX + radius * cos(theta);
+  //   let y = bananaCenterY + radius * sin(theta);
+  //   circle(x, y, 5);
   }
 }
+
+
+
+
 
 
 
 //Hours Function
 function drawHours(myHour){
   fill("#654321"); 
+  // let bananaCenterX = width / 4 + 230;
+  // let bananaCenterY = height - 250;
+  // let radius = 15; // Slightly different radius than minutes
 
+  // for (let j = 0; j < myHour; j++) {
+  //   let theta = map(j, 0, 24, PI / 3, (2 * PI) / 3); // Different curvature range
+  //   let x = bananaCenterX + radius * cos(theta);
+  //   let y = bananaCenterY + radius * sin(theta);
+  //   ellipse(x, y, 15, 7);
   for(let j=0; j < myHour; j++){
     ellipse(hourX[j],hourY[j],15,7,15,7);
   }
